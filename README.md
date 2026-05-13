@@ -1,2 +1,7 @@
-# EdmundFu-233.github.io
-Personal portfolio website — built with vanilla HTML/CSS/JS
+## Portfolio Website
+
+Welcome to my personal portfolio.
+
+This site is hosted at **https://edmundfu-233.github.io**
+
+Built with HTML5, CSS3, and vanilla JavaScript.
