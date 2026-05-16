@@ -55,7 +55,9 @@
         <div class="hero-content">
             <div class="hero-badge">🚀 Open to opportunities</div>
             <h1>Zhihao Fu</h1>
-            <p class="subtitle">CS student at the University of Waterloo who builds backend systems, iOS apps, and developer tools that actually ship.</p>
+            <p class="subtitle">
+                <span id="typing-text"></span><span class="cursor">|</span>
+            </p>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary">View Projects ↓</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -392,6 +394,39 @@
         window.addEventListener('scroll', () => {
             backToTop.classList.toggle('visible', window.scrollY > 500);
         });
+
+        // Typing animation
+        const phrases = [
+            'Backend Developer',
+            'iOS App Builder',
+            'Open Source Contributor',
+            'CS Student @ Waterloo',
+        ];
+        let phraseIdx = 0, charIdx = 0, isDeleting = false;
+        const typingEl = document.getElementById('typing-text');
+
+        function type() {
+            const current = phrases[phraseIdx];
+            if (isDeleting) {
+                typingEl.textContent = current.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                typingEl.textContent = current.substring(0, charIdx + 1);
+                charIdx++;
+            }
+
+            let speed = isDeleting ? 40 : 80;
+            if (!isDeleting && charIdx === current.length) {
+                speed = 1500;
+                isDeleting = true;
+            } else if (isDeleting && charIdx === 0) {
+                isDeleting = false;
+                phraseIdx = (phraseIdx + 1) % phrases.length;
+                speed = 300;
+            }
+            setTimeout(type, speed);
+        }
+        type();
     </script>
 </body>
 </html>
