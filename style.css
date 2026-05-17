@@ -728,3 +728,53 @@ footer a {
         font-size: 1.1rem;
     }
 }
+
+/* ======= Education Section ======= */
+#education {
+    position: relative;
+    z-index: 1;
+}
+.education-grid {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.edu-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.edu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px var(--accent-glow);
+}
+.edu-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+.edu-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.edu-meta {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+.edu-dot {
+    margin: 0 0.5rem;
+}
+.edu-card p {
+    color: var(--text-muted);
+    font-size: 0.925rem;
+    line-height: 1.6;
+}
+.edu-highlight {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--accent);
+}
