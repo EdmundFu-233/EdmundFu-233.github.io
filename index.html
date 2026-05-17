@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zhihao Fu (EdmundFu) — CS student at University of Waterloo. Backend, full-stack, and iOS developer.">
-    <meta name="keywords" content="Zhihao Fu, EdmundFu, University of Waterloo, backend developer, iOS, Swift, Python, Go">
+    <title>Zhihao Fu (EdmundFu) — Backend Developer & CS Student @ Waterloo</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Zhihao Fu (EdmundFu) — CS student at University of Waterloo. Backend infrastructure, full-stack development, iOS networking, and open-source.">
+    <meta name="keywords" content="Zhihao Fu, EdmundFu, University of Waterloo, backend developer, iOS, Swift, Python, Go, Waterloo CS">
     <meta name="author" content="Zhihao Fu">
-    <title>Zhihao Fu | Portfolio</title>
+    <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Zhihao Fu — Portfolio">
-    <meta property="og:description" content="CS Student @ University of Waterloo | Backend, Full-Stack & iOS Developer">
+    <meta property="og:title" content="Zhihao Fu — Backend Developer & CS Student">
+    <meta property="og:description" content="CS Student @ University of Waterloo | Building backend systems, iOS apps, and open-source tools.">
     <meta property="og:url" content="https://edmundfu-233.github.io">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://edmundfu-233.github.io/og-image.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zhihao Fu — Backend Developer & CS Student">
+    <meta name="twitter:description" content="CS Student @ University of Waterloo | Backend & Full-Stack Developer">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zhihao Fu",
+      "alternateName": "EdmundFu",
+      "url": "https://edmundfu-233.github.io",
+      "email": "fuzhihao321@gmail.com",
+      "jobTitle": "Computer Science Student",
+      "alumniOf": ["Tianjin Maritime College", "Conestoga College"],
+      "affiliation": { "@type": "Organization", "name": "University of Waterloo" },
+      "knowsAbout": ["Backend Development", "Python", "Go", "Swift", "iOS", "Linux", "Networking"],
+      "sameAs": [
+        "https://github.com/EdmundFu-233"
+      ]
+    }
+    </script>
+    
+    <!-- Favicon (emoji-based for zero overhead) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +105,7 @@
 
     <!-- About -->
     <section id="about">
-        <div class="section-inner">
+        <div class="section-inner reveal">
             <span class="section-label">About</span>
             <h2 class="section-title">Building for the real world.</h2>
             <p class="section-desc">From PXE boot servers to VPN tunnels — I write code that solves real infrastructure and product problems.</p>
@@ -112,7 +143,7 @@
 
     <!-- Skills -->
     <section id="skills">
-        <div class="section-inner">
+        <div class="section-inner reveal">
             <span class="section-label">Skills</span>
             <h2 class="section-title">Tech stack & tools.</h2>
             <p class="section-desc">Languages and technologies I use to build.</p>
@@ -169,7 +200,7 @@
 
     <!-- Projects -->
     <section id="projects">
-        <div class="section-inner">
+        <div class="section-inner reveal">
             <span class="section-label">Projects</span>
             <h2 class="section-title">Selected work.</h2>
             <p class="section-desc">Things I've built — from open-source tools to production-ready apps.</p>
@@ -180,6 +211,7 @@
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
                         <span class="project-tag">Open Source</span>
+                        <span class="project-tag">37 ⭐</span>
                     </div>
                 </div>
                 <p>Combines network performance data, user inputs, and pricing data to estimate mining revenue with visual outputs. Built with community feedback — <strong>37 stars, 8 forks.</strong></p>
@@ -215,29 +247,32 @@
 
     <!-- Stats -->
     <section id="stats">
-        <div class="section-inner">
+        <div class="section-inner reveal">
             <span class="section-label">Stats</span>
             <h2 class="section-title">By the numbers.</h2>
             <p class="section-desc">A quick look at my GitHub activity and open-source contributions.</p>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-value">12+</div>
+                    <div class="stat-value" data-count="12">0<span class="stat-suffix">+</span></div>
                     <div class="stat-label">Public Repos</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value">37<span class="stat-suffix">★</span></div>
+                    <div class="stat-value" data-count="37">0<span class="stat-suffix">★</span></div>
                     <div class="stat-label">Top Project Stars</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value">290+</div>
+                    <div class="stat-value" data-count="290">0<span class="stat-suffix">+</span></div>
                     <div class="stat-label">Contributions</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value">3<span class="stat-suffix">yr</span></div>
+                    <div class="stat-value" data-count="4">0<span class="stat-suffix">yr</span></div>
                     <div class="stat-label">Coding Experience</div>
                 </div>
             </div>
-            <div style="margin-top: 2rem; text-align: center;">
+            <div class="gh-contrib">
+                <img src="https://ghchart.rshah.org/6c63ff/EdmundFu-233" alt="EdmundFu-233's GitHub contribution chart" loading="lazy">
+            </div>
+            <div style="margin-top: 1.5rem; text-align: center;">
                 <a href="https://github.com/EdmundFu-233" class="project-link" target="_blank">View full profile on GitHub →</a>
             </div>
         </div>
@@ -245,7 +280,7 @@
 
     <!-- Experience -->
     <section id="experience">
-        <div class="section-inner">
+        <div class="section-inner reveal">
             <span class="section-label">Experience</span>
             <h2 class="section-title">Where I've worked.</h2>
             <p class="section-desc">From enterprise IT to startup operations.</p>
@@ -280,14 +315,14 @@
 
     <!-- Contact -->
     <section id="contact">
-        <div class="section-inner" style="text-align: center;">
+        <div class="section-inner reveal" style="text-align: center;">
             <span class="section-label">Contact</span>
             <h2 class="section-title">Let's build something.</h2>
             <p class="section-desc" style="margin-left: auto; margin-right: auto;">Open to collaboration, opportunities, and interesting conversations.</p>
             <div class="contact-links">
-                <a href="mailto:edmundfu.dev@gmail.com" class="contact-link">
+                <a href="mailto:fuzhihao321@gmail.com" class="contact-link">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    edmundfu.dev@gmail.com
+                    fuzhihao321@gmail.com
                 </a>
                 <a href="https://github.com/EdmundFu-233" class="contact-link" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -306,8 +341,8 @@
         <p>© 2026 <a href="https://github.com/EdmundFu-233">Zhihao Fu (EdmundFu)</a>. Built with ❤️ from Waterloo.</p>
     </footer>
 
-    <!-- Particles JS -->
     <script>
+        // ===== Particles =====
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
@@ -334,9 +369,7 @@
             update() {
                 this.x += this.speedX;
                 this.y += this.speedY;
-                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
-                    this.reset();
-                }
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
             }
             draw() {
                 ctx.beginPath();
@@ -347,9 +380,7 @@
         }
 
         const particleCount = Math.min(Math.floor(canvas.width * canvas.height / 15000), 80);
-        for (let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
-        }
+        for (let i = 0; i < particleCount; i++) particles.push(new Particle());
 
         function connect() {
             for (let i = 0; i < particles.length; i++) {
@@ -371,29 +402,24 @@
 
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
+            particles.forEach(p => { p.update(); p.draw(); });
             connect();
             requestAnimationFrame(animate);
         }
         animate();
 
-        // Navbar scroll effect + active link highlighting + hamburger
+        // ===== Navbar Scroll =====
         const navbar = document.getElementById('navbar');
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         const allNavLinks = navLinks.querySelectorAll('a');
         const sections = [...allNavLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
-        // Hamburger toggle
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('open');
         });
 
-        // Close mobile nav on link click
         allNavLinks.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -401,32 +427,24 @@
             });
         });
 
-        // Scroll spy for active nav + scrolled class
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
-
             const scrollPos = window.scrollY + 120;
             let current = '';
             sections.forEach(section => {
-                if (section && section.offsetTop <= scrollPos) {
-                    current = '#' + section.getAttribute('id');
-                }
+                if (section && section.offsetTop <= scrollPos) current = '#' + section.getAttribute('id');
             });
             allNavLinks.forEach(a => {
                 a.classList.toggle('active', a.getAttribute('href') === current);
             });
         });
 
-        // Back to top button
+        // ===== Back to Top =====
         const backToTop = document.getElementById('backToTop');
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        window.addEventListener('scroll', () => {
-            backToTop.classList.toggle('visible', window.scrollY > 500);
-        });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 500));
 
-        // Typing animation
+        // ===== Typing Animation =====
         const phrases = [
             'Backend Developer',
             'iOS App Builder',
@@ -438,26 +456,58 @@
 
         function type() {
             const current = phrases[phraseIdx];
-            if (isDeleting) {
-                typingEl.textContent = current.substring(0, charIdx - 1);
-                charIdx--;
-            } else {
-                typingEl.textContent = current.substring(0, charIdx + 1);
-                charIdx++;
-            }
-
+            if (isDeleting) { typingEl.textContent = current.substring(0, charIdx - 1); charIdx--; }
+            else { typingEl.textContent = current.substring(0, charIdx + 1); charIdx++; }
             let speed = isDeleting ? 40 : 80;
-            if (!isDeleting && charIdx === current.length) {
-                speed = 1500;
-                isDeleting = true;
-            } else if (isDeleting && charIdx === 0) {
-                isDeleting = false;
-                phraseIdx = (phraseIdx + 1) % phrases.length;
-                speed = 300;
-            }
+            if (!isDeleting && charIdx === current.length) { speed = 1500; isDeleting = true; }
+            else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; speed = 300; }
             setTimeout(type, speed);
         }
         type();
+
+        // ===== Scroll Reveal =====
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // ===== Count-up Animation =====
+        const countEls = document.querySelectorAll('[data-count]');
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.count);
+                    const duration = 1500;
+                    const start = performance.now();
+
+                    function update(now) {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.floor(eased * target);
+                        const suffix = el.querySelector('.stat-suffix');
+                        if (suffix) {
+                            el.innerHTML = current + suffix.outerHTML;
+                        } else {
+                            el.textContent = current;
+                        }
+                        if (progress < 1) requestAnimationFrame(update);
+                    }
+                    requestAnimationFrame(update);
+                    countObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        countEls.forEach(el => countObserver.observe(el));
     </script>
 </body>
 </html>
