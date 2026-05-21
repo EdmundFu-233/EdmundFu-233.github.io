@@ -352,12 +352,19 @@
                     LinkedIn
                 </a>
             </div>
+            <div class="contact-form-wrapper" style="margin-top: 2rem;">
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Or send a quick message directly:</p>
+                <a href="mailto:fuzhihao321@gmail.com?subject=Hello%20from%20your%20portfolio" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Send an Email
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 <a href="https://github.com/EdmundFu-233">Zhihao Fu (EdmundFu)</a>. Built with ❤️.</p>
+        <p>© <span id="year">2026</span> <a href="https://github.com/EdmundFu-233">Zhihao Fu (EdmundFu)</a>. Built with ❤️ from Waterloo.</p>
     </footer>
 
     <script>
@@ -527,6 +534,9 @@
         }, { threshold: 0.5 });
 
         countEls.forEach(el => countObserver.observe(el));
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
