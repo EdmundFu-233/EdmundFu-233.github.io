@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhihao Fu (EdmundFu) — Backend Developer & Backend & iOS Developer</title>
+    <title>Zhihao Fu (EdmundFu) — York University Student &amp; Software Developer</title>
     
     <!-- SEO -->
-    <meta name="description" content="Zhihao Fu (EdmundFu) — CS student at Conestoga College. Building infrastructure, iOS apps, and open-source tools.">
-    <meta name="keywords" content="Zhihao Fu, EdmundFu, Conestoga College, backend developer, iOS, Swift, Python, Go">
+    <meta name="description" content="Zhihao Fu (EdmundFu) is a York University student based in Toronto, building backend infrastructure, iOS apps, and open-source tools.">
+    <meta name="keywords" content="Zhihao Fu, EdmundFu, York University, Toronto, software developer, backend developer, iOS, Swift, Python, Go">
     <meta name="author" content="Zhihao Fu">
     <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://edmundfu-233.github.io/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Zhihao Fu — Backend Developer & CS Student">
-    <meta property="og:description" content="CS Student @ Conestoga College | Building infrastructure, iOS apps, and open-source tools.">
-    <meta property="og:url" content="https://edmundfu-233.github.io">
+    <meta property="og:title" content="Zhihao Fu — York University Student &amp; Software Developer">
+    <meta property="og:description" content="York University student based in Toronto, building backend infrastructure, iOS apps, and open-source tools.">
+    <meta property="og:url" content="https://edmundfu-233.github.io/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Zhihao Fu — Portfolio">
+    <meta property="og:locale" content="en_CA">
     <meta property="og:image" content="https://edmundfu-233.github.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Zhihao Fu — York University student and software developer based in Toronto">
     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zhihao Fu — Backend Developer & CS Student">
-    <meta name="twitter:description" content="CS Student @ Conestoga College | Backend & Full-Stack Developer">
+    <meta name="twitter:title" content="Zhihao Fu — York University Student &amp; Software Developer">
+    <meta name="twitter:description" content="York University student based in Toronto, focused on backend systems, iOS, and open source.">
+    <meta name="twitter:image" content="https://edmundfu-233.github.io/og-image.png">
+    <meta name="twitter:image:alt" content="Zhihao Fu — York University student and software developer based in Toronto">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -30,14 +40,21 @@
       "@type": "Person",
       "name": "Zhihao Fu",
       "alternateName": "EdmundFu",
-      "url": "https://edmundfu-233.github.io",
-      "email": "fuzhihao321@gmail.com",
-      "jobTitle": "Software Developer",
-      "alumniOf": ["Tianjin Maritime College", "Conestoga College"],
-      "affiliation": { "@type": "Organization", "name": "Conestoga College" },
+      "url": "https://edmundfu-233.github.io/",
+      "jobTitle": "Student and Software Developer",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "York University",
+        "url": "https://www.yorku.ca/"
+      },
+      "homeLocation": {
+        "@type": "City",
+        "name": "Toronto, Ontario, Canada"
+      },
       "knowsAbout": ["Backend Development", "Python", "Go", "Swift", "iOS", "Linux", "Networking"],
       "sameAs": [
-        "https://github.com/EdmundFu-233"
+        "https://github.com/EdmundFu-233",
+        "https://www.linkedin.com/in/zhihao-fu-21191a2ba/"
       ]
     }
     </script>
@@ -45,17 +62,14 @@
     <!-- Favicon (emoji-based for zero overhead) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <!-- Particles -->
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
     <!-- Back to top -->
     <button id="backToTop" aria-label="Back to top" title="Back to top">
@@ -63,10 +77,10 @@
     </button>
 
     <!-- Navigation -->
-    <nav id="navbar">
+    <nav id="navbar" aria-label="Primary navigation">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">&lt;Z<span>F</span> /&gt;</a>
-            <button class="hamburger" aria-label="Toggle navigation" id="hamburger">
+            <a href="#top" class="nav-logo" aria-label="Zhihao Fu — back to top">&lt;Z<span>F</span> /&gt;</a>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -75,21 +89,25 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#stats">Stats</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <main id="main-content" tabindex="-1">
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-content">
-            <div class="hero-badge">🚀 Open to opportunities</div>
-            <h1>Zhihao Fu</h1>
-            <p class="subtitle">
-                <span id="typing-text"></span><span class="cursor">|</span>
-            </p>
+            <div class="hero-badge"><span aria-hidden="true">📍</span> York University · Toronto</div>
+            <h1 id="hero-title">Zhihao Fu</h1>
+            <p class="subtitle">Student and software developer focused on backend systems, iOS, and open-source infrastructure.</p>
+            <div class="hero-focus" aria-label="Areas of focus">
+                <span>Backend &amp; Systems</span>
+                <span>iOS &amp; Networking</span>
+                <span>Open Source</span>
+            </div>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary">View Projects ↓</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -111,30 +129,30 @@
             <p class="section-desc">From PXE boot servers to VPN tunnels — I write code that solves real infrastructure and product problems.</p>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I'm a Computer Science student passionate about backend infrastructure, networking, and full-stack development. I've worked across iOS networking, Linux deployment automation, data tooling, and IT operations.</p>
+                    <p>I'm a York University student based in Toronto, passionate about backend infrastructure, networking, and full-stack development. I've worked across iOS networking, Linux deployment automation, data tooling, and IT operations.</p>
                     <p>I believe great software is reliable, well-tested, and user-focused. Whether it's integrating a QUIC-based VPN client or designing a diskless PXE cluster, I dig into the details and make things work.</p>
                     <p>Outside of code, I've led small teams at hackathons, managed operations for a local business, and kept servers running smoothly under the hood.</p>
                 </div>
                 <div class="about-highlights">
                     <div class="highlight-card">
-                        <div class="icon">🎓</div>
-                        <h4>Conestoga College</h4>
-                        <p>Computer Science, BCS</p>
+                        <div class="icon" aria-hidden="true">🎓</div>
+                        <h3>York University</h3>
+                        <p>Current student · Toronto</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="icon">💻</div>
-                        <h4>Backend & Systems</h4>
+                        <div class="icon" aria-hidden="true">💻</div>
+                        <h3>Backend &amp; Systems</h3>
                         <p>Python, Go, Rust, Swift</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="icon">🌐</div>
-                        <h4>Network Programming</h4>
+                        <div class="icon" aria-hidden="true">🌐</div>
+                        <h3>Network Programming</h3>
                         <p>VPN, PXE, QUIC, iOS NE</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="icon">📦</div>
-                        <h4>Open Source</h4>
-                        <p>37★ revenue calculator tool</p>
+                        <div class="icon" aria-hidden="true">📦</div>
+                        <h3>Open Source</h3>
+                        <p>Community-driven software</p>
                     </div>
                 </div>
             </div>
@@ -145,7 +163,7 @@
     <section id="skills">
         <div class="section-inner reveal">
             <span class="section-label">Skills</span>
-            <h2 class="section-title">Tech stack & tools.</h2>
+            <h2 class="section-title">Tech stack &amp; tools.</h2>
             <p class="section-desc">Languages and technologies I use to build.</p>
             <div class="skills-grid">
                 <div class="skill-category">
@@ -162,7 +180,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Backend & Infrastructure</h3>
+                    <h3>Backend &amp; Infrastructure</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Flask</span>
@@ -175,7 +193,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>iOS & Mobile</h3>
+                    <h3>iOS &amp; Mobile</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">iOS Development</span>
                         <span class="skill-tag">Network Extension</span>
@@ -185,7 +203,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
+                    <h3>Tools &amp; Platforms</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">GitHub Actions</span>
                         <span class="skill-tag">Postman</span>
@@ -205,17 +223,30 @@
             <h2 class="section-title">Selected work.</h2>
             <p class="section-desc">Things I've built — from open-source tools to production-ready apps.</p>
 
+            <div class="project-card featured-project">
+                <div class="project-header">
+                    <h3>ReCasaOS</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Go</span>
+                        <span class="project-tag">Security</span>
+                        <span class="project-tag">Self-hosted</span>
+                    </div>
+                </div>
+                <p>A security-first community continuation of CasaOS, focused on safer self-hosting, maintainable upgrades, and transparent hardening.</p>
+                <a href="https://github.com/EdmundFu-233/ReCasaOS" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+
             <div class="project-card">
                 <div class="project-header">
                     <h3>Qubic Revenue Calculator</h3>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
                         <span class="project-tag">Open Source</span>
-                        <span class="project-tag">37 ⭐</span>
+                        <span class="project-tag">Data Tool</span>
                     </div>
                 </div>
-                <p>Combines network performance data, user inputs, and pricing data to estimate mining revenue with visual outputs. Built with community feedback — <strong>37 stars, 8 forks.</strong></p>
-                <a href="https://github.com/EdmundFu-233/Qubic_revenue_calculator" class="project-link" target="_blank">View on GitHub →</a>
+                <p>Combines network performance data, user inputs, and pricing data to estimate mining revenue with visual outputs. Built and improved through community feedback.</p>
+                <a href="https://github.com/EdmundFu-233/Qubic_revenue_calculator" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
             </div>
 
             <div class="project-card">
@@ -245,53 +276,20 @@
         </div>
     </section>
 
-    <!-- Stats -->
-    <section id="stats">
-        <div class="section-inner reveal">
-            <span class="section-label">Stats</span>
-            <h2 class="section-title">By the numbers.</h2>
-            <p class="section-desc">A quick look at my GitHub activity and open-source contributions.</p>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value" data-count="12">0<span class="stat-suffix">+</span></div>
-                    <div class="stat-label">Public Repos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" data-count="37">0<span class="stat-suffix">★</span></div>
-                    <div class="stat-label">Top Project Stars</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" data-count="290">0<span class="stat-suffix">+</span></div>
-                    <div class="stat-label">Contributions</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" data-count="4">0<span class="stat-suffix">yr</span></div>
-                    <div class="stat-label">Coding Experience</div>
-                </div>
-            </div>
-            <div class="gh-contrib">
-                <img src="https://ghchart.rshah.org/6c63ff/EdmundFu-233" alt="EdmundFu-233's GitHub contribution chart" loading="lazy">
-            </div>
-            <div style="margin-top: 1.5rem; text-align: center;">
-                <a href="https://github.com/EdmundFu-233" class="project-link" target="_blank">View full profile on GitHub →</a>
-            </div>
-        </div>
-    </section>
-
-        <!-- Education -->
+    <!-- Education -->
     <section id="education">
-        <div class="section-inner">
+        <div class="section-inner reveal">
             <span class="section-label">Education</span>
             <h2 class="section-title">Academic journey.</h2>
-            <p class="section-desc">Computer Science at the University of Waterloo.</p>
+            <p class="section-desc">Currently studying at York University in Toronto.</p>
             <div class="education-grid">
                 <div class="edu-card">
-                    <div class="edu-icon">🎓</div>
-                    <h3>University of Waterloo</h3>
-                    <p class="edu-meta">Bachelor of Computer Science<span class="edu-dot">·</span>2023 – Present</p>
-                    <p>Relevant coursework: Algorithms, Data Structures, Operating Systems, Networks, Database Management, Software Engineering.</p>
+                    <div class="edu-icon" aria-hidden="true">🎓</div>
+                    <h3><a href="https://www.yorku.ca/" target="_blank" rel="noopener noreferrer">York University</a></h3>
+                    <p class="edu-meta">Current student</p>
+                    <p>Building a broad foundation while applying what I learn to hands-on work in backend infrastructure, networking, mobile development, and open-source software.</p>
                     <div class="edu-highlight">
-                        <span>📍 Waterloo, ON, Canada</span>
+                        <span><span aria-hidden="true">📍</span> Toronto, ON, Canada</span>
                     </div>
                 </div>
             </div>
@@ -305,7 +303,7 @@
             <p class="section-desc">From enterprise IT to startup operations.</p>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>Operations & Marketing Lead</h3>
+                    <h3>Operations &amp; Marketing Lead</h3>
                     <div class="meta">Lucas French </div>
                     <div class="date">Present</div>
                     <p>Administration, onboarding, scheduling, vendor coordination, and finance workflows. Managed content, social media, SEO/SEM, CRM/analytics, and impact-vs-effort prioritization.</p>
@@ -343,11 +341,11 @@
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     fuzhihao321@gmail.com
                 </a>
-                <a href="https://github.com/EdmundFu-233" class="contact-link" target="_blank">
+                <a href="https://github.com/EdmundFu-233" class="contact-link" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/zhihao-fu-21191a2ba/" class="contact-link" target="_blank">
+                <a href="https://www.linkedin.com/in/zhihao-fu-21191a2ba/" class="contact-link" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                     LinkedIn
                 </a>
@@ -361,24 +359,21 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>© <span id="year">2026</span> <a href="https://github.com/EdmundFu-233">Zhihao Fu (EdmundFu)</a>. Built with ❤️ from Waterloo.</p>
+        <p>© <span id="year">2026</span> <a href="https://github.com/EdmundFu-233">Zhihao Fu (EdmundFu)</a>. Built with care in Toronto.</p>
     </footer>
 
     <script>
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
         // ===== Particles =====
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
-
-        function resize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        resize();
-        window.addEventListener('resize', resize);
+        let particleFrame;
 
         class Particle {
             constructor() {
@@ -405,10 +400,14 @@
             }
         }
 
-        const particleCount = Math.min(Math.floor(canvas.width * canvas.height / 15000), 80);
-        for (let i = 0; i < particleCount; i++) particles.push(new Particle());
+        function resizeParticles() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            const particleCount = Math.min(Math.floor(canvas.width * canvas.height / 18000), 64);
+            particles = Array.from({ length: particleCount }, () => new Particle());
+        }
 
-        function connect() {
+        function connectParticles() {
             for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
@@ -426,116 +425,125 @@
             }
         }
 
-        function animate() {
+        function animateParticles() {
+            if (document.hidden || prefersReducedMotion.matches) {
+                particleFrame = undefined;
+                return;
+            }
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => { p.update(); p.draw(); });
-            connect();
-            requestAnimationFrame(animate);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            connectParticles();
+            particleFrame = requestAnimationFrame(animateParticles);
         }
-        animate();
 
-        // ===== Navbar Scroll =====
+        function syncParticleAnimation() {
+            if (particleFrame) cancelAnimationFrame(particleFrame);
+            particleFrame = undefined;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (!document.hidden && !prefersReducedMotion.matches) animateParticles();
+        }
+
+        resizeParticles();
+        syncParticleAnimation();
+        window.addEventListener('resize', () => {
+            resizeParticles();
+            syncParticleAnimation();
+        }, { passive: true });
+        document.addEventListener('visibilitychange', syncParticleAnimation);
+        if (prefersReducedMotion.addEventListener) {
+            prefersReducedMotion.addEventListener('change', syncParticleAnimation);
+        } else {
+            prefersReducedMotion.addListener(syncParticleAnimation);
+        }
+
+        // ===== Navigation =====
         const navbar = document.getElementById('navbar');
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         const allNavLinks = navLinks.querySelectorAll('a');
-        const sections = [...allNavLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+        const sections = [...allNavLinks]
+            .map(link => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+
+        function setMenuOpen(open) {
+            const isMobile = window.innerWidth <= 768;
+            const shouldOpen = isMobile && open;
+            hamburger.classList.toggle('active', shouldOpen);
+            navLinks.classList.toggle('open', shouldOpen);
+            hamburger.setAttribute('aria-expanded', String(shouldOpen));
+            document.body.classList.toggle('nav-open', shouldOpen);
+            navLinks.toggleAttribute('inert', isMobile && !shouldOpen);
+            if (isMobile) navLinks.setAttribute('aria-hidden', String(!shouldOpen));
+            else navLinks.removeAttribute('aria-hidden');
+        }
+
+        setMenuOpen(false);
 
         hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('open');
+            setMenuOpen(!navLinks.classList.contains('open'));
         });
 
-        allNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('open');
-            });
+        allNavLinks.forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+                setMenuOpen(false);
+                hamburger.focus();
+            }
         });
 
-        window.addEventListener('scroll', () => {
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 || !navLinks.classList.contains('open')) setMenuOpen(false);
+        }, { passive: true });
+
+        const backToTop = document.getElementById('backToTop');
+
+        function handleScroll() {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
-            const scrollPos = window.scrollY + 120;
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+
+            const scrollPos = window.scrollY + 140;
             let current = '';
             sections.forEach(section => {
-                if (section && section.offsetTop <= scrollPos) current = '#' + section.getAttribute('id');
+                if (section.offsetTop <= scrollPos) current = `#${section.id}`;
             });
-            allNavLinks.forEach(a => {
-                a.classList.toggle('active', a.getAttribute('href') === current);
+            allNavLinks.forEach(link => {
+                const isCurrent = link.getAttribute('href') === current;
+                link.classList.toggle('active', isCurrent);
+                if (isCurrent) link.setAttribute('aria-current', 'page');
+                else link.removeAttribute('aria-current');
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: prefersReducedMotion.matches ? 'auto' : 'smooth'
             });
         });
-
-        // ===== Back to Top =====
-        const backToTop = document.getElementById('backToTop');
-        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-        window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 500));
-
-        // ===== Typing Animation =====
-        const phrases = [
-            'Backend Developer',
-            'iOS App Builder',
-            'Open Source Contributor',
-            'Backend & iOS Developer',
-        ];
-        let phraseIdx = 0, charIdx = 0, isDeleting = false;
-        const typingEl = document.getElementById('typing-text');
-
-        function type() {
-            const current = phrases[phraseIdx];
-            if (isDeleting) { typingEl.textContent = current.substring(0, charIdx - 1); charIdx--; }
-            else { typingEl.textContent = current.substring(0, charIdx + 1); charIdx++; }
-            let speed = isDeleting ? 40 : 80;
-            if (!isDeleting && charIdx === current.length) { speed = 1500; isDeleting = true; }
-            else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; speed = 300; }
-            setTimeout(type, speed);
-        }
-        type();
 
         // ===== Scroll Reveal =====
         const revealEls = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.15 });
-
-        revealEls.forEach(el => revealObserver.observe(el));
-
-        // ===== Count-up Animation =====
-        const countEls = document.querySelectorAll('[data-count]');
-        const countObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const el = entry.target;
-                    const target = parseInt(el.dataset.count);
-                    const duration = 1500;
-                    const start = performance.now();
-
-                    function update(now) {
-                        const elapsed = now - start;
-                        const progress = Math.min(elapsed / duration, 1);
-                        const eased = 1 - Math.pow(1 - progress, 3);
-                        const current = Math.floor(eased * target);
-                        const suffix = el.querySelector('.stat-suffix');
-                        if (suffix) {
-                            el.innerHTML = current + suffix.outerHTML;
-                        } else {
-                            el.textContent = current;
-                        }
-                        if (progress < 1) requestAnimationFrame(update);
+        if (prefersReducedMotion.matches || !('IntersectionObserver' in window)) {
+            revealEls.forEach(element => element.classList.add('visible'));
+        } else {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
                     }
-                    requestAnimationFrame(update);
-                    countObserver.unobserve(el);
-                }
-            });
-        }, { threshold: 0.5 });
+                });
+            }, { threshold: 0.12 });
+            revealEls.forEach(element => revealObserver.observe(element));
+        }
 
-        countEls.forEach(el => countObserver.observe(el));
-    </script>
-    <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>

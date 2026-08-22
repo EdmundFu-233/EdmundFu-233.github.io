@@ -1,7 +1,21 @@
-## Portfolio Website
+# Zhihao Fu — Portfolio
 
-Welcome to my personal portfolio.
+Personal portfolio for Zhihao Fu (EdmundFu), a York University student and software developer based in Toronto.
 
-This site is hosted at **https://edmundfu-233.github.io**
+Live site: **https://edmundfu-233.github.io/**
 
-Built with HTML5, CSS3, and vanilla JavaScript.
+## Built with
+
+- Semantic HTML5, modern CSS, and vanilla JavaScript
+- Responsive navigation and layouts
+- Keyboard-visible focus states and reduced-motion support
+- Open Graph, Twitter Card, and JSON-LD metadata
+- GitHub Pages with no build step or third-party runtime dependencies
+
+## Local preview
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:4173/`.
