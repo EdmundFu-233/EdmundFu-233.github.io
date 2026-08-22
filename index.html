@@ -103,10 +103,10 @@
             <div class="hero-badge"><span aria-hidden="true">📍</span> York University · Toronto</div>
             <h1 id="hero-title">Zhihao Fu</h1>
             <p class="subtitle">Student and software developer focused on backend systems, iOS, and open-source infrastructure.</p>
-            <div class="hero-focus" aria-label="Areas of focus">
-                <span>Backend &amp; Systems</span>
-                <span>iOS &amp; Networking</span>
-                <span>Open Source</span>
+            <div class="hero-focus" role="list" aria-label="Areas of focus">
+                <span role="listitem">Backend &amp; Systems</span>
+                <span role="listitem">iOS &amp; Networking</span>
+                <span role="listitem">Open Source</span>
             </div>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary">View Projects ↓</a>
@@ -513,7 +513,7 @@
             allNavLinks.forEach(link => {
                 const isCurrent = link.getAttribute('href') === current;
                 link.classList.toggle('active', isCurrent);
-                if (isCurrent) link.setAttribute('aria-current', 'page');
+                if (isCurrent) link.setAttribute('aria-current', 'location');
                 else link.removeAttribute('aria-current');
             });
         }
